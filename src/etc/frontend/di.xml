@@ -6,5 +6,7 @@
  * @license     http://www.opensource.org/licenses/mit-license.php MIT
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magento\CatalogSearch\Model\Search\RequestGenerator" type="Infrangible\CatalogAttributeFilterHidden\Model\Search\RequestGenerator"/>
+    <type name="Magento\LayeredNavigation\Block\Navigation">
+        <plugin name="infrangible_catalog_attribute_filter_hidden" type="Infrangible\CatalogAttributeFilterHidden\Plugin\LayeredNavigation\Block\Navigation"/>
+    </type>
 </config>
