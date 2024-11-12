@@ -9,4 +9,7 @@
     <type name="Magento\LayeredNavigation\Block\Navigation">
         <plugin name="infrangible_catalog_attribute_filter_hidden" type="Infrangible\CatalogAttributeFilterHidden\Plugin\LayeredNavigation\Block\Navigation"/>
     </type>
+    <type name="Magento\Catalog\Model\Layer\State">
+        <plugin name="infrangible_catalog_attribute_filter_hidden" type="Infrangible\CatalogAttributeFilterHidden\Plugin\Catalog\Model\Layer\State"/>
+    </type>
 </config>
